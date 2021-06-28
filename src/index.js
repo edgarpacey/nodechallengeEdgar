@@ -15,7 +15,7 @@ app.get("/about", (req, res) => {
 });
 
 app.post("/home", function (req, res) {
-  res.send("Activated.");
+  res.sendFile(__dirname + "/about.html");
 });
 
 app.get("/code", (req, res) => {
